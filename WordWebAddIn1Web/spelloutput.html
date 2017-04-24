@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h1>Did you mean : {{ user }} !</h1>
+    <h1>Or you could choose from the list below </h1>
+    <table border=1>
+        {% for key in sugg %}
+
+        <tr>
+            <th> {{ key }} </th>
+        </tr>
+
+        {% endfor %}
+    </table>
+</body>
+</html>
