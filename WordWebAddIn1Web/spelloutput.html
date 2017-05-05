@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -6,7 +6,15 @@
     <title></title>
 </head>
 <body>
-    <h1> you could choose from the list below </h1>
+    {{sugg1}}
+    {% for key in wrongwords %}
+    
+        <tr>
+         <th> {{ key }} </th>
+         </tr>
+    
+    {% endfor %}
+    <h1> {{display}}</h1>
     <table border=1>
         {% for key in sugg %}
             {% for key1 in key %}
